@@ -26,7 +26,23 @@ _viterbi_decode()：实现了Viterbi算法，用于找到给定输入最有可�
 
 ## 初始化函数
 
-在初始化函数中定义了一些变量和对象：tag_to_ix表示每个标签和对应标签 id 的字典；hidden_dim表示 LSTM 的隐藏状态的维度；bert_tokenizer和bert表示存放BERT模型和BERT分词器的对象；lstm表示存放LSTM模型的对象；hidden2tag表示全连接层模型，将输入序列的输出映射到标签空间的概率；transitions表示CRF层模型，转移矩阵的元素为模型预测从一个标签转移到另一个标签的概率，并初始化为符合预设标准的随机值；START_TAG和STOP_TAG分别表示起始和终止的标签；optimizer表示Adam优化器。
+在初始化函数中定义了一些变量和对象：
+
+tag_to_ix表示每个标签和对应标签 id 的字典；
+
+hidden_dim表示 LSTM 的隐藏状态的维度；
+
+bert_tokenizer和bert表示存放BERT模型和BERT分词器的对象；
+
+lstm表示存放LSTM模型的对象；
+
+hidden2tag表示全连接层模型，将输入序列的输出映射到标签空间的概率；
+
+transitions表示CRF层模型，转移矩阵的元素为模型预测从一个标签转移到另一个标签的概率，并初始化为符合预设标准的随机值；
+
+START_TAG和STOP_TAG分别表示起始和终止的标签；
+
+optimizer表示Adam优化器。
 
 
 ## 功能函数
