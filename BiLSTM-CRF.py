@@ -182,4 +182,4 @@ tag_to_ix = {
 START_TAG = "<START>"
 STOP_TAG = "<STOP>"
 hidden_dim = 1000
-model = BiLSTM_CRF(bert_model, tag_to_ix, hidden_dim)
+model = BiLSTM_CRF(bert_model, tag_to_ix, hidden_dim).cuda()
