@@ -44,6 +44,21 @@ with open("val_data.json", "r") as f:
     val_data = json.load(f)
 
 
+"""
+数据集示例
+[
+  {
+    "text": "The event will take place in New York.",
+    "tags": ["O", "O", "O", "O", "O", "O", "B-ENTITY", "I-ENTITY"]
+  },
+  {
+    "text": "John Doe is the organizer of the event.",
+    "tags": ["B-ENTITY", "I-ENTITY", "O", "O", "O", "O", "O", "B-EVENT"]
+  }
+]
+"""
+
+
 # 创建数据加载器
 train_dataset = EventDataset(train_data, tokenizer, MAX_LEN)
 val_dataset = EventDataset(val_data, tokenizer, MAX_LEN)
