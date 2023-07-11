@@ -4,6 +4,8 @@ Date: 2023-04-13 22:06:34
 LastEditTime: 2023-04-19 10:13:31
 FilePath: \files\python_work\dachuang\state2\BiLSTM-CRF.py
 Description: 
+刘廷汉
+1120210576
 Copyright (c) 2023 by LTH, All Rights Reserved. 
 
 """
