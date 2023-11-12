@@ -86,7 +86,8 @@ create_bar_chart(
 plt.figure(figsize=(12, 6))
 sns.heatmap(
     np.array(data),
-    annot=True,
+    # annot=True,
+    annot=False,
     fmt=".1f",
     cmap="coolwarm",
     xticklabels=classes,
